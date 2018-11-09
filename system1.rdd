@@ -16,7 +16,7 @@
 <Text>Manager</Text>
 </Symbol>
 
-<Symbol symbolId="SYMB3" type="sdlPrcs" xCenter="506" yCenter="22" fixedDimensions="FALSE" width="88" height="44" color="#000000" fillColor="#C4EFED">
+<Symbol symbolId="SYMB3" type="sdlPrcs" xCenter="506" yCenter="132" fixedDimensions="FALSE" width="88" height="44" color="#000000" fillColor="#C4EFED">
 <Description></Description>
 <Text>CC(0, 1)</Text>
 </Symbol>
@@ -51,25 +51,27 @@ Conect, NoSignal, A_onhook;</Text>
 
 </Link>
 
-<Link linkId="LINK24" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK26" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>ch2</Text>
 <Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
-<Text id="1">[all_ready, num_ok, num_wrong]
+<Text id="1">[all_ready, num_ok, num_wrong, busy, alerting, no_signal]
 </Text>
 <Text id="2"></Text>
 </Connector>
 <Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
-<Text id="1">[digit]
+<Text id="1">[digit, call_end]
 </Text>
 <Text id="2"></Text>
 </Connector>
-<LinkSegment orientation="h" length="407"/>
+<LinkSegment orientation="h" length="209"/>
+<LinkSegment orientation="v" length="110"/>
+<LinkSegment orientation="h" length="198"/>
 
 </Link>
 
-<Link linkId="LINK25" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
+<Link linkId="LINK27" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>ch3</Text>
-<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
+<Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="x" position="-1.0" endType="midarrow">
 <Text id="1">[dr_ready, encoded_digit]
 </Text>
 <Text id="2"></Text>
@@ -79,9 +81,7 @@ Conect, NoSignal, A_onhook;</Text>
 </Text>
 <Text id="2"></Text>
 </Connector>
-<LinkSegment orientation="v" length="121"/>
-<LinkSegment orientation="h" length="-44"/>
-<LinkSegment orientation="v" length="319"/>
+<LinkSegment orientation="v" length="330"/>
 
 </Link>
 </DiagramPartition>
