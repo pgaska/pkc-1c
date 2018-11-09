@@ -3,17 +3,19 @@
 <!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
 
 <DictionaryObjects version="9025" language="none" diagramType="sys">
-<Signal id="SIG1" name="Conect">
+<Signal id="SIG1" name="A_offhook">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB5"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG10" name="CallProceeding">
+<Signal id="SIG10" name="A_onhook">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB5"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG11" name="Alerting">
+<Signal id="SIG11" name="Digit">
+<SignalParameterType>Integer</SignalParameterType>
+<SignalParameterTypeId typeItemId="ITEM2"/>
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB5"/>
 </DefiningSymbols>
@@ -22,48 +24,54 @@
 </Signal>
 <Signal id="SIG13" name="all_ready">
 </Signal>
-<Signal id="SIG14" name="digit_">
+<Signal id="SIG14" name="num_ok">
 </Signal>
-<Signal id="SIG15" name="dr_ready">
+<Signal id="SIG15" name="num_wrong">
 </Signal>
-<Signal id="SIG2" name="A_offhook">
+<Signal id="SIG16" name="digit_">
+</Signal>
+<Signal id="SIG17" name="dr_end">
+</Signal>
+<Signal id="SIG18" name="dr_ready">
+</Signal>
+<Signal id="SIG19" name="encoded_digit">
+</Signal>
+<Signal id="SIG2" name="Conect">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB5"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG3" name="Reject">
+<Signal id="SIG3" name="Alerting">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB5"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG4" name="A_onhook">
+<Signal id="SIG4" name="CallProceeding">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB5"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG5" name="Busy">
+<Signal id="SIG5" name="Dial">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB5"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG6" name="Digit">
-<SignalParameterType>Integer</SignalParameterType>
-<SignalParameterTypeId typeItemId="ITEM2"/>
+<Signal id="SIG6" name="Busy">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB5"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG7" name="Dial">
+<Signal id="SIG7" name="NoSignal">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB5"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG8" name="WrongNumber">
+<Signal id="SIG8" name="Reject">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB5"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG9" name="NoSignal">
+<Signal id="SIG9" name="WrongNumber">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB5"/>
 </DefiningSymbols>
@@ -73,24 +81,24 @@
 <SymbolReference symbolId="SYMB1"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW6" insideDiagram="TRUE">
-<ConnectorReference linkId="LINK13" isFrom="FALSE"/>
+<ConnectorReference linkId="LINK23" isFrom="FALSE"/>
 <Connections>
 <Connection name="ch1"/>
 </Connections>
 <SentSignals>
-<SignalReference id="SIG2"/>
-<SignalReference id="SIG4"/>
-<SignalReference id="SIG6"/>
-</SentSignals>
-<ReceivedSignals>
-<SignalReference id="SIG7"/>
-<SignalReference id="SIG3"/>
-<SignalReference id="SIG8"/>
+<SignalReference id="SIG1"/>
 <SignalReference id="SIG10"/>
 <SignalReference id="SIG11"/>
+</SentSignals>
+<ReceivedSignals>
 <SignalReference id="SIG5"/>
-<SignalReference id="SIG1"/>
+<SignalReference id="SIG8"/>
 <SignalReference id="SIG9"/>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG6"/>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG7"/>
 </ReceivedSignals>
 </SignalWindow>
 <Channel name="ch1" fromSignalWindow="SIGWDW1" toSignalWindow="SIGWDW6"/>
@@ -110,30 +118,32 @@
 <SymbolReference symbolId="SYMB2"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW1" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK13" isFrom="TRUE"/>
+<ConnectorReference linkId="LINK23" isFrom="TRUE"/>
 <SentSignals>
-<SignalReference id="SIG7"/>
-<SignalReference id="SIG3"/>
-<SignalReference id="SIG8"/>
-<SignalReference id="SIG10"/>
-<SignalReference id="SIG11"/>
 <SignalReference id="SIG5"/>
-<SignalReference id="SIG1"/>
+<SignalReference id="SIG8"/>
 <SignalReference id="SIG9"/>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG6"/>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG7"/>
 </SentSignals>
 <ReceivedSignals>
-<SignalReference id="SIG2"/>
-<SignalReference id="SIG4"/>
-<SignalReference id="SIG6"/>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG10"/>
+<SignalReference id="SIG11"/>
 </ReceivedSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW2" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK18" isFrom="TRUE"/>
+<ConnectorReference linkId="LINK24" isFrom="TRUE"/>
 <SentSignals>
 <SignalReference id="SIG12"/>
 </SentSignals>
 <ReceivedSignals>
 <SignalReference id="SIG13"/>
+<SignalReference id="SIG14"/>
+<SignalReference id="SIG15"/>
 </ReceivedSignals>
 </SignalWindow>
 </Item>
@@ -145,18 +155,22 @@
 <SymbolReference symbolId="SYMB3"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW4" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK20" isFrom="TRUE"/>
+<ConnectorReference linkId="LINK25" isFrom="TRUE"/>
 <SentSignals>
-<SignalReference id="SIG14"/>
+<SignalReference id="SIG16"/>
+<SignalReference id="SIG17"/>
 </SentSignals>
 <ReceivedSignals>
-<SignalReference id="SIG15"/>
+<SignalReference id="SIG18"/>
+<SignalReference id="SIG19"/>
 </ReceivedSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW3" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK18" isFrom="FALSE"/>
+<ConnectorReference linkId="LINK24" isFrom="FALSE"/>
 <SentSignals>
 <SignalReference id="SIG13"/>
+<SignalReference id="SIG14"/>
+<SignalReference id="SIG15"/>
 </SentSignals>
 <ReceivedSignals>
 <SignalReference id="SIG12"/>
@@ -171,12 +185,14 @@
 <SymbolReference symbolId="SYMB4"/>
 </UsingSymbols>
 <SignalWindow id="SIGWDW5" insideDiagram="FALSE">
-<ConnectorReference linkId="LINK20" isFrom="FALSE"/>
+<ConnectorReference linkId="LINK25" isFrom="FALSE"/>
 <SentSignals>
-<SignalReference id="SIG15"/>
+<SignalReference id="SIG18"/>
+<SignalReference id="SIG19"/>
 </SentSignals>
 <ReceivedSignals>
-<SignalReference id="SIG14"/>
+<SignalReference id="SIG16"/>
+<SignalReference id="SIG17"/>
 </ReceivedSignals>
 </SignalWindow>
 </Item>
