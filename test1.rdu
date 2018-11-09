@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE PrototypingGui SYSTEM "rtdsPrototypingGui.dtd">
+
+<PrototypingGui>
+<Gui width="400" height="300" backgroundColor="000000" backgroundImage="">
+<Widget id="2" name="BUTTON" type="BUTTON" x="50" y="20" width="300" height="40" text="Podnieś słuchawke" textColor="#000000" color="#C4EFED">
+</Widget>
+</Gui>
+<Trigger messageName="A_offhook">
+<Case caseName="New case">
+<GuiAction widgetId="2" actionType="DISPLAY" value="New action"></GuiAction>
+</Case>
+</Trigger>
+</PrototypingGui>
