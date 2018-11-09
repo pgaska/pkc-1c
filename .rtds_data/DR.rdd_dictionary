@@ -13,7 +13,7 @@
 </Signal>
 <Signal id="SIG2" name="encoded_digit">
 <SignalParameterType>Integer</SignalParameterType>
-<SignalParameterTypeId typeItemId="ITEM5"/>
+<SignalParameterTypeId typeItemId="ITEM3"/>
 <DefiningSymbols>
 <SymbolReference symbolId="SYM4"/>
 </DefiningSymbols>
@@ -25,38 +25,34 @@
 </SentSignals>
 </Body>
 </Item>
-<Item id="ITEM2" type="variable" name="encoded_digit_val" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<UsingSymbols>
-<SymbolReference symbolId="SYM8"/>
-<SymbolReference symbolId="SYM7"/>
-</UsingSymbols>
-</Item>
-<Item id="ITEM3" type="variable" name="digit_val" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM2" type="variable" name="digit_val" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM7"/>
 <SymbolReference symbolId="SYM6"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM4" type="variable" name="digit" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-</Item>
-<Item id="ITEM5" type="type" name="Integer" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM3" type="type" name="Integer" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM4"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM6" type="variable" name="encoded_digit" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM4" type="variable" name="encoded_digit_val" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM8"/>
+<SymbolReference symbolId="SYM7"/>
+</UsingSymbols>
 </Item>
-<Item id="ITEM7" type="variable" name="encoded_digit_val" parentId="ITEM1" scope="none" variableTypeName="Integer" variableTypeId="ITEM5" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM5" type="variable" name="encoded_digit_val" parentId="ITEM1" scope="none" variableTypeName="Integer" variableTypeId="ITEM3" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM4" positions="3,4"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM8" type="variable" name="digit_val" parentId="ITEM1" scope="none" variableTypeName="Integer" variableTypeId="ITEM5" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM6" type="variable" name="digit_val" parentId="ITEM1" scope="none" variableTypeName="Integer" variableTypeId="ITEM3" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM4" positions="2,4"/>
 </DefiningSymbols>
 </Item>
-<Item id="ITEM9" type="state" name="digit_wait" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM7" type="state" name="digit_wait" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM5"/>
 </DefiningSymbols>

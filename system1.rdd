@@ -37,12 +37,12 @@ Conect, NoSignal, A_onhook;</Text>
 <Link linkId="LINK13" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>ch1</Text>
 <Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="x" position="-0.75" endType="midarrow">
-<Text id="1">[A_offhook, A_onhook]
+<Text id="1">[A_offhook, A_onhook, Digit]
 </Text>
 <Text id="2"></Text>
 </Connector>
 <Connector attachedSymbolId="SYMB1" type="chnl" isOutside="FALSE" side="w" position="-0.345806451613" endType="midarrow">
-<Text id="1">[Dial, Reject, Digit, WrongNumber, CallProceeding, Alerting, Busy, Conect, NoSignal]
+<Text id="1">[Dial, Reject, WrongNumber, CallProceeding, Alerting, Busy, Conect, NoSignal]
 </Text>
 <Text id="2"></Text>
 </Connector>
