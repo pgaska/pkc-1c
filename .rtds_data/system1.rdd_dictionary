@@ -22,30 +22,32 @@
 </Signal>
 <Signal id="SIG13" name="call_end">
 </Signal>
-<Signal id="SIG14" name="all_ready">
+<Signal id="SIG14" name="end">
 </Signal>
-<Signal id="SIG15" name="num_ok">
+<Signal id="SIG15" name="all_ready">
 </Signal>
-<Signal id="SIG16" name="num_wrong">
+<Signal id="SIG16" name="num_ok">
 </Signal>
-<Signal id="SIG17" name="busy">
+<Signal id="SIG17" name="num_wrong">
 </Signal>
-<Signal id="SIG18" name="alerting">
+<Signal id="SIG18" name="busy">
 </Signal>
-<Signal id="SIG19" name="no_signal">
+<Signal id="SIG19" name="alerting">
 </Signal>
 <Signal id="SIG2" name="CallProceeding">
 <DefiningSymbols>
 <SymbolReference symbolId="SYMB5"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG20" name="dr_ready">
+<Signal id="SIG20" name="no_signal">
 </Signal>
-<Signal id="SIG21" name="encoded_digit">
+<Signal id="SIG21" name="dr_ready">
 </Signal>
-<Signal id="SIG22" name="digit_">
+<Signal id="SIG22" name="encoded_digit">
 </Signal>
-<Signal id="SIG23" name="dr_end">
+<Signal id="SIG23" name="digit_">
+</Signal>
+<Signal id="SIG24" name="dr_end">
 </Signal>
 <Signal id="SIG3" name="Reject">
 <DefiningSymbols>
@@ -148,14 +150,15 @@
 <SentSignals>
 <SignalReference id="SIG12"/>
 <SignalReference id="SIG13"/>
+<SignalReference id="SIG14"/>
 </SentSignals>
 <ReceivedSignals>
-<SignalReference id="SIG14"/>
 <SignalReference id="SIG15"/>
 <SignalReference id="SIG16"/>
 <SignalReference id="SIG17"/>
 <SignalReference id="SIG18"/>
 <SignalReference id="SIG19"/>
+<SignalReference id="SIG20"/>
 </ReceivedSignals>
 </SignalWindow>
 </Item>
@@ -169,12 +172,12 @@
 <SignalWindow id="SIGWDW3" insideDiagram="FALSE">
 <ConnectorReference linkId="LINK27" isFrom="FALSE"/>
 <SentSignals>
-<SignalReference id="SIG20"/>
 <SignalReference id="SIG21"/>
+<SignalReference id="SIG22"/>
 </SentSignals>
 <ReceivedSignals>
-<SignalReference id="SIG22"/>
 <SignalReference id="SIG23"/>
+<SignalReference id="SIG24"/>
 </ReceivedSignals>
 </SignalWindow>
 </Item>
@@ -188,27 +191,28 @@
 <SignalWindow id="SIGWDW4" insideDiagram="FALSE">
 <ConnectorReference linkId="LINK26" isFrom="FALSE"/>
 <SentSignals>
-<SignalReference id="SIG14"/>
 <SignalReference id="SIG15"/>
 <SignalReference id="SIG16"/>
 <SignalReference id="SIG17"/>
 <SignalReference id="SIG18"/>
 <SignalReference id="SIG19"/>
+<SignalReference id="SIG20"/>
 </SentSignals>
 <ReceivedSignals>
 <SignalReference id="SIG12"/>
 <SignalReference id="SIG13"/>
+<SignalReference id="SIG14"/>
 </ReceivedSignals>
 </SignalWindow>
 <SignalWindow id="SIGWDW5" insideDiagram="FALSE">
 <ConnectorReference linkId="LINK27" isFrom="TRUE"/>
 <SentSignals>
-<SignalReference id="SIG22"/>
 <SignalReference id="SIG23"/>
+<SignalReference id="SIG24"/>
 </SentSignals>
 <ReceivedSignals>
-<SignalReference id="SIG20"/>
 <SignalReference id="SIG21"/>
+<SignalReference id="SIG22"/>
 </ReceivedSignals>
 </SignalWindow>
 </Item>

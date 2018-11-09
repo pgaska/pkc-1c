@@ -59,7 +59,7 @@ Conect, NoSignal, A_onhook;</Text>
 <Text id="2"></Text>
 </Connector>
 <Connector attachedSymbolId="SYMB3" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
-<Text id="1">[digit, call_end]
+<Text id="1">[digit, call_end, end]
 </Text>
 <Text id="2"></Text>
 </Connector>

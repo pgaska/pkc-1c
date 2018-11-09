@@ -70,7 +70,7 @@
 <SymbolReference symbolId="SYM4"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM2" type="variable" name="digit_val" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM2" type="variable" name="digit_val" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM9"/>
 <SymbolReference symbolId="SYM12"/>
@@ -79,7 +79,6 @@
 <Item id="ITEM3" type="variable" name="any" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM22"/>
-<SymbolReference symbolId="SYM15"/>
 <SymbolReference symbolId="SYM29"/>
 </UsingSymbols>
 </Item>
@@ -95,15 +94,15 @@
 <SymbolReference symbolId="SYM7"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM6" type="variable" name="encoded_digit_val" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM6" type="variable" name="encoded_digit_val" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
+<SymbolReference symbolId="SYM15"/>
 <SymbolReference symbolId="SYM14"/>
 </UsingSymbols>
 </Item>
 <Item id="ITEM7" type="variable" name="Boolean" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM22"/>
-<SymbolReference symbolId="SYM15"/>
 <SymbolReference symbolId="SYM29"/>
 </UsingSymbols>
 </Item>
