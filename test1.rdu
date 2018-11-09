@@ -5,6 +5,7 @@
 <PrototypingGui>
 <Gui width="400" height="430" backgroundColor="#DDDDDD" backgroundImage="">
 <Widget id="1" name="OFFHOOK" type="BUTTON" x="40" y="350" width="90" height="40" text="OFF HOOK" textColor="#000000" color="#00a812">
+<OutputAction messageName="A_offhook" data=""></OutputAction>
 </Widget>
 <Widget id="2" name="ONHOOK" type="BUTTON" x="170" y="350" width="90" height="40" text="ON HOOK" textColor="#000000" color="#ff0000">
 </Widget>
@@ -41,6 +42,7 @@
 <Widget id="18" name="TEXT" type="TEXT_DISPLAY" x="270" y="310" width="60" height="20" text="No signal" textColor="#000000" color="#FFFFFF">
 </Widget>
 <Widget id="19" name="1" type="BUTTON" x="30" y="40" width="40" height="20" text="1" textColor="#000000" color="#C4EFED">
+<OutputAction messageName="Digit" data="param1|=1"></OutputAction>
 </Widget>
 <Widget id="20" name="2" type="BUTTON" x="90" y="40" width="40" height="20" text="2" textColor="#000000" color="#C4EFED">
 </Widget>
@@ -61,9 +63,4 @@
 <Widget id="28" name="0" type="BUTTON" x="90" y="160" width="40" height="20" text="0" textColor="#000000" color="#C4EFED">
 </Widget>
 </Gui>
-<Trigger messageName="A_offhook">
-<Case caseName="New case">
-<GuiAction widgetId="2" actionType="DISPLAY" value="A_onhook"></GuiAction>
-</Case>
-</Trigger>
 </PrototypingGui>
