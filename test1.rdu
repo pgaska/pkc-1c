@@ -3,13 +3,67 @@
 <!DOCTYPE PrototypingGui SYSTEM "rtdsPrototypingGui.dtd">
 
 <PrototypingGui>
-<Gui width="400" height="300" backgroundColor="000000" backgroundImage="">
-<Widget id="2" name="BUTTON" type="BUTTON" x="50" y="20" width="300" height="40" text="Podnieś słuchawke" textColor="#000000" color="#C4EFED">
+<Gui width="400" height="430" backgroundColor="#DDDDDD" backgroundImage="">
+<Widget id="1" name="OFFHOOK" type="BUTTON" x="40" y="350" width="90" height="40" text="OFF HOOK" textColor="#000000" color="#00a812">
+</Widget>
+<Widget id="2" name="ONHOOK" type="BUTTON" x="170" y="350" width="90" height="40" text="ON HOOK" textColor="#000000" color="#ff0000">
+</Widget>
+<Widget id="3" name="dial" type="LED" x="350" y="30" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+</Widget>
+<Widget id="4" name="reject" type="LED" x="350" y="70" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+</Widget>
+<Widget id="5" name="wrong_num" type="LED" x="350" y="110" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+</Widget>
+<Widget id="6" name="call_proceed" type="LED" x="350" y="150" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+</Widget>
+<Widget id="7" name="alerting" type="LED" x="350" y="190" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+</Widget>
+<Widget id="8" name="busy" type="LED" x="350" y="230" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+</Widget>
+<Widget id="9" name="conect" type="LED" x="350" y="270" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+</Widget>
+<Widget id="10" name="no_signal" type="LED" x="350" y="310" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+</Widget>
+<Widget id="11" name="TEXT" type="TEXT_DISPLAY" x="270" y="30" width="60" height="20" text="Dial" textColor="#000000" color="#FFFFFF">
+</Widget>
+<Widget id="12" name="TEXT" type="TEXT_DISPLAY" x="270" y="70" width="60" height="20" text="Reject" textColor="#000000" color="#FFFFFF">
+</Widget>
+<Widget id="13" name="TEXT" type="TEXT_DISPLAY" x="270" y="110" width="60" height="20" text="Wrong Number" textColor="#000000" color="#FFFFFF">
+</Widget>
+<Widget id="14" name="TEXT" type="TEXT_DISPLAY" x="270" y="150" width="60" height="20" text="Call Proceeding" textColor="#000000" color="#FFFFFF">
+</Widget>
+<Widget id="15" name="TEXT" type="TEXT_DISPLAY" x="270" y="190" width="60" height="20" text="Alerting" textColor="#000000" color="#FFFFFF">
+</Widget>
+<Widget id="16" name="TEXT" type="TEXT_DISPLAY" x="270" y="230" width="60" height="20" text="Busy" textColor="#000000" color="#FFFFFF">
+</Widget>
+<Widget id="17" name="TEXT" type="TEXT_DISPLAY" x="270" y="270" width="60" height="20" text="Conect" textColor="#000000" color="#FFFFFF">
+</Widget>
+<Widget id="18" name="TEXT" type="TEXT_DISPLAY" x="270" y="310" width="60" height="20" text="No signal" textColor="#000000" color="#FFFFFF">
+</Widget>
+<Widget id="19" name="1" type="BUTTON" x="30" y="40" width="40" height="20" text="1" textColor="#000000" color="#C4EFED">
+</Widget>
+<Widget id="20" name="2" type="BUTTON" x="90" y="40" width="40" height="20" text="2" textColor="#000000" color="#C4EFED">
+</Widget>
+<Widget id="21" name="3" type="BUTTON" x="150" y="40" width="40" height="20" text="3" textColor="#000000" color="#C4EFED">
+</Widget>
+<Widget id="22" name="4" type="BUTTON" x="30" y="80" width="40" height="20" text="4" textColor="#000000" color="#C4EFED">
+</Widget>
+<Widget id="23" name="5" type="BUTTON" x="90" y="80" width="40" height="20" text="5" textColor="#000000" color="#C4EFED">
+</Widget>
+<Widget id="24" name="6" type="BUTTON" x="150" y="80" width="40" height="20" text="6" textColor="#000000" color="#C4EFED">
+</Widget>
+<Widget id="25" name="7" type="BUTTON" x="30" y="120" width="40" height="20" text="7" textColor="#000000" color="#C4EFED">
+</Widget>
+<Widget id="26" name="8" type="BUTTON" x="90" y="120" width="40" height="20" text="8" textColor="#000000" color="#C4EFED">
+</Widget>
+<Widget id="27" name="9" type="BUTTON" x="150" y="120" width="40" height="20" text="9" textColor="#000000" color="#C4EFED">
+</Widget>
+<Widget id="28" name="0" type="BUTTON" x="90" y="160" width="40" height="20" text="0" textColor="#000000" color="#C4EFED">
 </Widget>
 </Gui>
 <Trigger messageName="A_offhook">
 <Case caseName="New case">
-<GuiAction widgetId="2" actionType="DISPLAY" value="New action"></GuiAction>
+<GuiAction widgetId="2" actionType="DISPLAY" value="A_onhook"></GuiAction>
 </Case>
 </Trigger>
 </PrototypingGui>
