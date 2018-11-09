@@ -75,7 +75,7 @@ Conect, NoSignal, A_onhook;</Text>
 <Text id="2"></Text>
 </Connector>
 <Connector attachedSymbolId="SYMB4" type="chnl" isOutside="TRUE" side="x" position="0.0" endType="midarrow">
-<Text id="1">[_digit]
+<Text id="1">[digit_]
 </Text>
 <Text id="2"></Text>
 </Connector>

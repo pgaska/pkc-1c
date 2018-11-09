@@ -24,7 +24,7 @@
 </Signal>
 <Signal id="SIG14" name="dr_ready">
 </Signal>
-<Signal id="SIG15" name="_digit">
+<Signal id="SIG15" name="digit_">
 </Signal>
 <Signal id="SIG2" name="NoSignal">
 <DefiningSymbols>

@@ -7,28 +7,28 @@
 <SdlFSMSymbol identifier="SYM4" type="sdlText" text="signal dr_ready;
 signal encoded_digit(Integer);
 dcl digit_val Integer := 0;
-dcl encoded_digit_val Integer := 0;" outline_color="-" background_color="-" center_coordinates="123 140" dimensions="266 78" attached_symbol_id=""/>
+dcl encoded_digit_val Integer := 0;" outline_color="-" background_color="-" center_coordinates="123 140" dimensions="264 76" attached_symbol_id=""/>
 <NonStateTransition top_left_coordinates="283 56">
-<SdlFSMSymbol identifier="SYM1" type="sdlStart" outline_color="-" background_color="-" center_coordinates="406 71" dimensions="60 30" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM1" type="sdlStart" outline_color="-" background_color="-" center_coordinates="405 71" dimensions="60 30" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM3" type="sdlSendSig" text="dr_ready" outline_color="-" background_color="-" center_coordinates="406 118" dimensions="76 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM5" type="sdlState" text="digit_wait" outline_color="-" background_color="-" center_coordinates="406 170" dimensions="90 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM3" type="sdlSendSig" text="dr_ready" outline_color="-" background_color="-" center_coordinates="405 118" dimensions="76 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM5" type="sdlState" text="digit_wait" outline_color="-" background_color="-" center_coordinates="405 170" dimensions="90 40" attached_symbol_id=""/>
 </Transition>
 </NonStateTransition>
 <StateTransitionBlock top_left_coordinates="238 150">
 <SdlFSMSymbolReference identifier="SYM5"/>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM6" type="sdlInputSig" text="_digit(digit_val)" outline_color="-" background_color="-" center_coordinates="406 222" dimensions="140 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM6" type="sdlInputSig" text="digit_(digit_val)" outline_color="-" background_color="-" center_coordinates="405 222" dimensions="140 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM7" type="sdlTask" text="encoded_digit_val := digit_val" outline_color="-" background_color="-" center_coordinates="406 274" dimensions="232 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM8" type="sdlSendSig" text="encoded_digit(encoded_digit_val)" outline_color="-" background_color="-" center_coordinates="406 326" dimensions="246 40" attached_symbol_id=""/>
-<SdlFSMSymbol identifier="SYM9" type="sdlStop" outline_color="-" background_color="-" center_coordinates="406 368" dimensions="20 20" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM7" type="sdlTask" text="encoded_digit_val := digit_val" outline_color="-" background_color="-" center_coordinates="405 274" dimensions="230 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM8" type="sdlSendSig" text="encoded_digit(encoded_digit_val)" outline_color="-" background_color="-" center_coordinates="405 326" dimensions="244 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM9" type="sdlStop" outline_color="-" background_color="-" center_coordinates="405 368" dimensions="20 20" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 <NormalStateTransition>
-<SdlFSMSymbol identifier="SYM10" type="sdlInputSig" text="dr_end" outline_color="-" background_color="-" center_coordinates="570 222" dimensions="62 40" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM10" type="sdlInputSig" text="dr_end" outline_color="-" background_color="-" center_coordinates="568 222" dimensions="62 40" attached_symbol_id=""/>
 <Transition>
-<SdlFSMSymbol identifier="SYM11" type="sdlStop" outline_color="-" background_color="-" center_coordinates="570 264" dimensions="20 20" attached_symbol_id=""/>
+<SdlFSMSymbol identifier="SYM11" type="sdlStop" outline_color="-" background_color="-" center_coordinates="568 264" dimensions="20 20" attached_symbol_id=""/>
 </Transition>
 </NormalStateTransition>
 </StateTransitionBlock>

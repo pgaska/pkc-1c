@@ -8,22 +8,22 @@
 <SymbolReference symbolId="SYM7"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG2" name="all_ready">
+<Signal id="SIG2" name="no_signal">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM7"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG3" name="no_signal">
+<Signal id="SIG3" name="alerting">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM7"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG4" name="alerting">
+<Signal id="SIG4" name="all_ready">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM7"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG5" name="digit">
+<Signal id="SIG5" name="digit_">
 <SignalParameterType>Integer</SignalParameterType>
 <SignalParameterTypeId typeItemId="ITEM7"/>
 <DefiningSymbols>
