@@ -3,12 +3,12 @@
 <!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
 
 <DictionaryObjects version="9025" language="sdl" diagramType="prcs">
-<Signal id="SIG1" name="all_ready">
+<Signal id="SIG1" name="busy">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM7"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG2" name="busy">
+<Signal id="SIG2" name="no_signal">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM7"/>
 </DefiningSymbols>
@@ -18,12 +18,14 @@
 <SymbolReference symbolId="SYM7"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG4" name="no_signal">
+<Signal id="SIG4" name="conect">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM7"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG5" name="conect">
+<Signal id="SIG5" name="digit_">
+<SignalParameterType>Integer</SignalParameterType>
+<SignalParameterTypeId typeItemId="ITEM5"/>
 <DefiningSymbols>
 <SymbolReference symbolId="SYM7"/>
 </DefiningSymbols>
@@ -33,19 +35,17 @@
 <SymbolReference symbolId="SYM7"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG7" name="digit_">
-<SignalParameterType>Integer</SignalParameterType>
-<SignalParameterTypeId typeItemId="ITEM5"/>
+<Signal id="SIG7" name="num_wrong">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM7"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG8" name="num_wrong">
+<Signal id="SIG8" name="num_ok">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM7"/>
 </DefiningSymbols>
 </Signal>
-<Signal id="SIG9" name="num_ok">
+<Signal id="SIG9" name="all_ready">
 <DefiningSymbols>
 <SymbolReference symbolId="SYM7"/>
 </DefiningSymbols>

@@ -8,22 +8,23 @@
 <OutputAction messageName="A_offhook" data=""></OutputAction>
 </Widget>
 <Widget id="2" name="ONHOOK" type="BUTTON" x="170" y="350" width="90" height="40" text="ON HOOK" textColor="#000000" color="#ff0000">
+<OutputAction messageName="A_onhook" data=""></OutputAction>
 </Widget>
-<Widget id="3" name="dial" type="LED" x="350" y="30" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+<Widget id="3" name="dial" type="LED" x="350" y="30" width="20" height="20" text="N/A" textColor="#000000" color="#000000">
 </Widget>
-<Widget id="4" name="reject" type="LED" x="350" y="70" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+<Widget id="4" name="reject" type="LED" x="350" y="70" width="20" height="20" text="N/A" textColor="#000000" color="#0e0000">
 </Widget>
-<Widget id="5" name="wrong_num" type="LED" x="350" y="110" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+<Widget id="5" name="wrong_num" type="LED" x="350" y="110" width="20" height="20" text="N/A" textColor="#000000" color="#000000">
 </Widget>
-<Widget id="6" name="call_proceed" type="LED" x="350" y="150" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+<Widget id="6" name="call_proceed" type="LED" x="350" y="150" width="20" height="20" text="N/A" textColor="#000000" color="#000000">
 </Widget>
-<Widget id="7" name="alerting" type="LED" x="350" y="190" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+<Widget id="7" name="alerting" type="LED" x="350" y="190" width="20" height="20" text="N/A" textColor="#000000" color="#000000">
 </Widget>
-<Widget id="8" name="busy" type="LED" x="350" y="230" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+<Widget id="8" name="busy" type="LED" x="350" y="230" width="20" height="20" text="N/A" textColor="#000000" color="#000000">
 </Widget>
-<Widget id="9" name="conect" type="LED" x="350" y="270" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+<Widget id="9" name="conect" type="LED" x="350" y="270" width="20" height="20" text="N/A" textColor="#000000" color="#000000">
 </Widget>
-<Widget id="10" name="no_signal" type="LED" x="350" y="310" width="20" height="20" text="N/A" textColor="#000000" color="#FF0000">
+<Widget id="10" name="no_signal" type="LED" x="350" y="310" width="20" height="20" text="N/A" textColor="#000000" color="#000000">
 </Widget>
 <Widget id="11" name="TEXT" type="TEXT_DISPLAY" x="270" y="30" width="60" height="20" text="Dial" textColor="#000000" color="#FFFFFF">
 </Widget>
@@ -72,4 +73,49 @@
 <OutputAction messageName="Digit" data="param1|=0"></OutputAction>
 </Widget>
 </Gui>
+<Trigger messageName="Dial">
+<Case caseName="New case">
+<GuiAction widgetId="3" actionType="CHANGE_COLOR" value="green"></GuiAction>
+</Case>
+</Trigger>
+<Trigger messageName="Reject">
+<Case caseName="New case">
+<GuiAction widgetId="4" actionType="CHANGE_COLOR" value="green"></GuiAction>
+</Case>
+</Trigger>
+<Trigger messageName="Dial">
+<Case caseName="New case">
+<GuiAction widgetId="3" actionType="CHANGE_COLOR" value="green"></GuiAction>
+</Case>
+</Trigger>
+<Trigger messageName="WrongNumber">
+<Case caseName="New case">
+<GuiAction widgetId="5" actionType="CHANGE_COLOR" value="green"></GuiAction>
+</Case>
+</Trigger>
+<Trigger messageName="CallProceeding">
+<Case caseName="New case">
+<GuiAction widgetId="6" actionType="CHANGE_COLOR" value="green"></GuiAction>
+</Case>
+</Trigger>
+<Trigger messageName="Alerting">
+<Case caseName="New case">
+<GuiAction widgetId="7" actionType="CHANGE_COLOR" value="green"></GuiAction>
+</Case>
+</Trigger>
+<Trigger messageName="Busy">
+<Case caseName="New case">
+<GuiAction widgetId="8" actionType="CHANGE_COLOR" value="green"></GuiAction>
+</Case>
+</Trigger>
+<Trigger messageName="Conect">
+<Case caseName="New case">
+<GuiAction widgetId="9" actionType="CHANGE_COLOR" value="green"></GuiAction>
+</Case>
+</Trigger>
+<Trigger messageName="NoSignal">
+<Case caseName="New case">
+<GuiAction widgetId="10" actionType="CHANGE_COLOR" value="green"></GuiAction>
+</Case>
+</Trigger>
 </PrototypingGui>

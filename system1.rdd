@@ -54,7 +54,7 @@ Conect, NoSignal, A_onhook;</Text>
 <Link linkId="LINK26" type="chnl" textSegmentNum="0" color="#000000" reverseRead="FALSE" oriented="TRUE">
 <Text>ch2</Text>
 <Connector attachedSymbolId="SYMB2" type="chnl" isOutside="TRUE" side="y" position="0.0" endType="midarrow">
-<Text id="1">[all_ready, num_ok, num_wrong, busy, alerting, no_signal]
+<Text id="1">[all_ready, num_ok, conect, num_wrong, busy, alerting, no_signal]
 </Text>
 <Text id="2"></Text>
 </Connector>

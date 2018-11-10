@@ -5,7 +5,7 @@
 <DictionaryObjects version="9025" language="sdl" diagramType="prcs">
 <Signal id="SIG1" name="digit">
 <SignalParameterType>Integer</SignalParameterType>
-<SignalParameterTypeId typeItemId="ITEM5"/>
+<SignalParameterTypeId typeItemId="ITEM7"/>
 <DefiningSymbols>
 <SymbolReference symbolId="SYM8"/>
 </DefiningSymbols>
@@ -22,48 +22,75 @@
 </Signal>
 <Item id="ITEM1" type="process" name="Manager" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 </Item>
-<Item id="ITEM2" type="variable" name="digit_val" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM10" type="variable" name="must_end" parentId="ITEM1" scope="none" variableTypeName="Boolean" variableTypeId="ITEM4" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM8" positions="2,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM11" type="variable" name="digit_val" parentId="ITEM1" scope="none" variableTypeName="Integer" variableTypeId="ITEM7" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM8" positions="1,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM12" type="state" name="init_wait" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM2"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM2"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM13" type="connector" name="END" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM71"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM14" type="state" name="end_wait" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM74"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM2" type="variable" name="must_end" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM64"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM3" type="variable" name="digit_val" parentId="ITEM1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM21"/>
 <SymbolReference symbolId="SYM25"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM3" type="variable" name="any" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<UsingSymbols>
-<SymbolReference symbolId="SYM5"/>
-</UsingSymbols>
-</Item>
-<Item id="ITEM4" type="variable" name="true" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<UsingSymbols>
-<SymbolReference symbolId="SYM6"/>
-</UsingSymbols>
-</Item>
-<Item id="ITEM5" type="type" name="Integer" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM4" type="type" name="Boolean" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM8"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM6" type="variable" name="Boolean" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM5" type="variable" name="any" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
 <SymbolReference symbolId="SYM5"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM7" type="variable" name="false" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Item id="ITEM6" type="variable" name="true" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
-<SymbolReference symbolId="SYM7"/>
+<SymbolReference symbolId="SYM64"/>
+<SymbolReference symbolId="SYM6"/>
 </UsingSymbols>
 </Item>
-<Item id="ITEM8" type="variable" name="digit_val" parentId="ITEM1" scope="none" variableTypeName="Integer" variableTypeId="ITEM5" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYM8" positions="1,4"/>
-</DefiningSymbols>
-</Item>
-<Item id="ITEM9" type="state" name="init_wait" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
-<DefiningSymbols>
-<SymbolReference symbolId="SYM2"/>
-</DefiningSymbols>
+<Item id="ITEM7" type="type" name="Integer" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
 <UsingSymbols>
-<SymbolReference symbolId="SYM2"/>
+<SymbolReference symbolId="SYM8"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM8" type="variable" name="Boolean" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM5"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM9" type="variable" name="false" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM8"/>
+<SymbolReference symbolId="SYM7"/>
 </UsingSymbols>
 </Item>
 </DictionaryObjects>
